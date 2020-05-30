@@ -1,0 +1,44 @@
+{
+  "name": "bears",
+  "version": "1.0.0",
+  "description": "gulp project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev --dev",
+    "build": "build"
+  },
+  "author": "Dubich Tonya",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.1",
+    "browser-sync": "^2.26.5",
+    "css-mqpacker": "^7.0.0",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-webp": "^4.0.1",
+    "posthtml-include": "^1.2.0",
+    "smart-grid": "^2.1.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.1"
+  },
+  "keywords": []
+}

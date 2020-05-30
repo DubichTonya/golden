@@ -1,0 +1,15 @@
+@mixin museo {
+  font-family: 'Museo Sans Cyrl 900', Arial, Helvetica, sans-serif;
+}
+
+@mixin fira {
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+@mixin roboto {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+$white: #ffffff;
+$grey: #7a7a7a;
+$yellow: #fff500;

@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+  margin: 0 auto;
+  @include roboto;
+  font-size: 20px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+  font-size: 0;
+  line-height: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input, a {
+  -webkit-appearance: none;
+}
+
+.list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: none;
+
+  outline-color: $yellow;
+}
+
+
+// media ------------1200px --------------------------------------
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+// media ------------576px -------------------------------------- 
+
+@media (max-width: 576px) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

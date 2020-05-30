@@ -1,0 +1,27 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Museo Sans Cyrl 900';
+  src: url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'),
+      url('../fonts/MuseoSansCyrl-900.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Regular.woff2') format('woff2'),
+      url('../fonts/FiraSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+      url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

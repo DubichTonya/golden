@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Golden Key</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">
+      Golden Key
+    </h1>
+    <div class="page-header__slider slider">
+      <div class="slider__img">
+        <img src="images/header-bg-1.jpg" alt="Слайд 1">
+      </div>
+      <div class="slider__img">
+        <img src="images/header-bg-2.jpg" alt="Слайд 1">
+      </div>
+      <div class="slider__img">
+        <img src="images/header-bg-3.jpg" alt="Слайд 1">
+      </div>
+    </div>
+    <div class="container">
+      <div class="page-header__top">
+        <a href="#!" class="page-header-logo">
+          <img src="./images/logo.png" alt="Логотип">
+        </a>
+        <div class="page-header__infoBlock">
+          <ul class="page-header__social">
+            <li><a href="#!"><img src="images/insta-icon.png" alt="instagram"></a></li>
+            <li><a href="#!"><img src="images/telegram-icon.png" alt="telegram"></a></li>
+            <li><a href="#!"><img src="images/youtube-icon.png" alt="youtube"></a></li>
+            <li><a href="#!"><img src="images/facebook-icon.png" alt="facebook"></a></li>
+          </ul>
+          <div class="page-header__info">
+            <span>Пн.-Сб.: с 10:00 до 20:00</span>
+            <a href="tel:++77777777777">+7 (777) 777 77 77 </a>
+          </div>
+        </div>
+      </div>
+      <nav class="page-header__navigation">
+        <button class="page-header__navigationBnt">
+          <span class="navigationBnt"></span>
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <ul class="page-header__navigationList">
+          <li><a href="#!">Главная страница</a></li>
+          <li><a href="#!">О нас</a></li>
+          <li class="page-header__navigationFlats">
+            <a href="#!">Квартиры</a>
+            <ul class="page-header__navigationFlatsList">
+              <li><a href="#!">Квартира 1</a></li>
+              <li><a href="#!">Квартира 2</a></li>
+            </ul>
+          </li>
+          <li class="page-header__navigationCottages">
+            <a href="#!">Коттеджи/Особняки</a>
+            <ul class="page-header__navigationFlatsList">
+              <li><a href="#!">Коттедж 1</a></li>
+              <li><a href="#!">Коттеджи/Особняки 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#!">Коммерческая недвижимость</a></li>
+        </ul>
+      </nav>
+      <section class="page-header__forms">
+        <h2 class="visually-hidden">
+          Поиск квартиры
+        </h2>
+        <form action="#!">
+          <div class="form__block form__block-search">
+            <h3>Поиск</h3>
+            <input type="text" id="search" class="btn" placeholder="Название ЖК, улица, метро, район">
+          </div>
+          <div class="form__block form__block-type">
+            <h3>Вид недвижимости</h3>
+            <div class="form__block-typeSelect">
+              <label for="type"></label>
+                <select name="type" id="type" class=" btn">
+                  <option value="Чебурашка">Таунхаусы</option>
+                  <option value="Чебурашка">Таунхаусs 2</option>
+                </select>
+            </div>
+          </div>
+          <div class="form__block form__block-info">
+            <div class="form__block-rooms">
+              <h3>Количество комнат</h3>
+              <div class="form__block-roomsWrapper">
+                <input type="checkbox" name="rooms" value="1" id="room-1">
+                <label for="room-1">1</label>
+                <input type="checkbox" name="rooms" value="2" id="room-2">
+                <label for="room-2">2</label>
+                <input type="checkbox" name="rooms" value="3" id="room-3">
+                <label for="room-3">3</label>
+                <input type="checkbox" name="rooms" value="4" id="room-4">
+                <label for="room-4">4</label>
+                <input type="checkbox" name="rooms" value="5" id="room-5">
+                <label for="room-5">5</label>
+                <input type="checkbox" name="rooms" value="5+" id="room-6">
+                <label for="room-6">5+</label>
+              </div>
+            </div>
+            <div class="form__block-sqr">
+              <div class="form__block-sqrTop">
+                <h3>Площадь, м2</h3>
+                <div class="form__block-sqrBtn">
+                  <input class="form-control btn" name="sqr-1" id="sqr-1">
+                  <span>&mdash;</span>
+                  <input class="form-control btn" name="sqr-2" id="sqr-2">
+                </div>
+              </div>
+              <div id="slider-range"></div>
+              <ul class="form__block-sqrBottom">
+                <li>50</li>
+                <li>100</li>
+                <li>150</li>
+                <li>200</li>
+                <li>250</li>
+                <li>300</li>
+              </ul>
+            </div>
+          </div>
+          <div class="form__block form__block-price">
+            <div class="form__block-priceLeft">
+              <h3>Цена</h3>
+              <div>
+                <input class="btn" type="text" id="price-start" placeholder="1 300 000 000">
+                <span>&mdash;</span>
+                <input class="btn" type="text" id="price-end" placeholder="3 800 000 000">
+              </div>
+            </div>
+            <ul class="form__block-priceRight">
+              <li class="moneyUnit moneyUnit-active">
+                <span>P</span> RUB
+              </li>
+              <li class="moneyUnit">
+                <span>&#36;</span> USD
+              </li>
+              <li class="moneyUnit">
+                <span>&euro;</span> EUR
+              </li>
+            </ul>
+            <button class="form__block-btn btn" type="submit">Поиск</button>
+          </div>
+        </form>
+      </section>
+      <ul class="page-header__links">
+        <li class="page-header__link page-header__link-1">
+          <a href="#!">
+            <div>
+              <span>
+                <img src="images/search-icon.png" alt="поиск">
+              </span>
+            </div>
+            Подбор<br>
+            недвижимости
+          </a>
+        </li>
+        <li class="page-header__link page-header__link-2">
+          <a href="#!">
+            <div>
+              <span>
+                <img src="images/video-icon.png" alt="видео">
+              </span>
+            </div>
+            Видео<br>
+            презентация
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="page-content">
+    <section class="page-content__bestOffer bestOffer">
+      <div class="container">
+        <h2>Лучшие предложения</h2>
+        <ul class="bestOffer__list">
+          <li>
+            <article class="offer">
+              <a href="#!">
+                <div class="offer__img"><img src="images/offer-img-1.jpg" alt="Картинка 1"></div>
+                <div class="offer__block">
+                  <h3 class="offer__title">3-х комнатная квартира, Московская обл., г. Реутов</h3>
+                  <div class="offer__price">13 500 000 руб.</div>
+                  <ul class="offer__info">
+                    <li class="offer__infoPrice">152 071 руб./м2</li>
+                    <li class="offer__infoSqr">82,8&nbsp;м2</li>
+                    <li class="offer__infoAddress">ул. Золоторожский Вал, вл. 11, корп. 10</li>
+                    <li class="offer__infoFloor">23/35 этаж</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="offer">
+              <a href="#!">
+               <div class="offer__img"> <img src="images/offer-img-2.jpg" alt="Картинка 2"></div>
+                <div class="offer__block">
+                  <h3 class="offer__title">2-х комнатная квартира, г.Москва</h3>
+                  <div class="offer__price">9 763 000 руб.</div>
+                  <ul class="offer__info">
+                    <li class="offer__infoPrice">152 071 руб./м2</li>
+                    <li class="offer__infoSqr">64,2&nbsp;м2</li>
+                    <li class="offer__infoAddress">пр-д 3-й Автозаводский, вл. 13</li>
+                    <li class="offer__infoFloor">23/35 этаж</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="offer">
+              <a href="#!">
+                <div class="offer__img"><img src="images/offer-img-3.jpg" alt="Картинка 3"></div>
+                <div class="offer__block">
+                  <h3 class="offer__title">3-х комнатная квартира, Московская обл., г. Луховицы</h3>
+                  <div class="offer__price">7 253 000 руб.</div>
+                  <ul class="offer__info">
+                    <li class="offer__infoPrice">152 071 руб./м2</li>
+                    <li class="offer__infoSqr">73,1&nbsp;м2</li>
+                    <li class="offer__infoAddress">ул. Верхняя, д. 20, корп. 1</li>
+                    <li class="offer__infoFloor">23/35 этаж</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="offer">
+              <a href="#!">
+                <div class="offer__img"><img src="images/offer-img-4.jpg" alt="Картинка 4"></div>
+                <div class="offer__block">
+                  <h3 class="offer__title">4-х комнатная квартира, Московская обл., г. Мытищи</h3>
+                  <div class="offer__price">35 270 000 руб.</div>
+                  <ul class="offer__info">
+                    <li class="offer__infoPrice">152 071 руб./м2</li>
+                    <li class="offer__infoSqr">121,5&nbsp;м2</li>
+                    <li class="offer__infoAddress">б-р Ореховый, вл. 24, корп. 2, стр. 2</li>
+                    <li class="offer__infoFloor">23/35 этаж</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="offer">
+              <a href="#!">
+                <div class="offer__img"><img src="images/offer-img-5.jpg" alt="Картинка 5"></div>
+                <div class="offer__block">
+                  <h3 class="offer__title">3-х комнатная квартира, г.Москва</h3>
+                  <div class="offer__price">19 516 000 руб.</div>
+                  <ul class="offer__info">
+                    <li class="offer__infoPrice">152 071 руб./м2</li>
+                    <li class="offer__infoSqr">71,7&nbsp;м2</li>
+                    <li class="offer__infoAddress">пр-д 3-й Автозаводский, вл. 13</li>
+                    <li class="offer__infoFloor">23/35 этаж</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="offer">
+              <a href="#!">
+                <div class="offer__img"><img src="images/offer-img-6.jpg" alt="Картинка 1"></div>
+                <div class="offer__block">
+                  <h3 class="offer__title">3-х комнатная квартира, Московская обл., г. Балашиха</h3>
+                  <div class="offer__price">17 982 000 руб.</div>
+                  <ul class="offer__info">
+                    <li class="offer__infoPrice">152 071 руб./м2</li>
+                    <li class="offer__infoSqr">114,6 м2</li>
+                    <li class="offer__infoAddress">ул. Погодинская, д. 4</li>
+                    <li class="offer__infoFloor">23/35 этаж</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
